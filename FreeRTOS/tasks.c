@@ -5229,7 +5229,7 @@ void Uint32ConvertHex(volatile StackType_t pStack, char *charTxScanTaskStack){
         quotient = quotient / 16;
     }
     end = j - 1;
-    for (reversal; reversal < end / 2 + 1; reversal++, end--) {
+    for (; reversal < end / 2 + 1; reversal++, end--) {
         reversalChar = charTxScanTaskStack[reversal];
         charTxScanTaskStack[reversal] = charTxScanTaskStack[end];
         charTxScanTaskStack[end] = reversalChar;
@@ -5252,7 +5252,7 @@ void LongConvertCharArray(UBaseType_t TxScanTaskPriority, char *charTxScanTaskSt
         quotient = quotient / 10;
     }
     end = j - 1;
-    for (reversal; reversal < end / 2 + 1; reversal++, end--) {
+    for (; reversal < end / 2 + 1; reversal++, end--) {
         reversalChar = charTxScanTaskStack[reversal];
         charTxScanTaskStack[reversal] = charTxScanTaskStack[end];
         charTxScanTaskStack[end] = reversalChar;
@@ -5307,7 +5307,7 @@ void Taskmonitor() {
 			strncat(curr_buf, item_buf, strlen(item_buf));
 			strcat(curr_buf, "\t");
             // State
-			strcat(curr_buf, "READY\n");
+			strcat(curr_buf, "READY\n\r");
 			// Write to console from USART
 			HAL_UART_Transmit(&huart2, (uint8_t *)curr_buf, strlen(curr_buf), 0xffff);
 		}
@@ -5347,7 +5347,7 @@ void Taskmonitor() {
 		strncat(curr_buf, item_buf, strlen(item_buf));
 		strcat(curr_buf, "\t");
         // State
-		strcat(curr_buf, "DELAYED\n");
+		strcat(curr_buf, "DELAYED\n\r");
 		// Write to console from USART
 		HAL_UART_Transmit(&huart2, (uint8_t *)curr_buf, strlen(curr_buf), 0xffff);
 	}

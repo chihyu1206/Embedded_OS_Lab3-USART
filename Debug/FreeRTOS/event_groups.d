@@ -4,7 +4,7 @@ FreeRTOS/event_groups.o: ../FreeRTOS/event_groups.c \
  /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/projdefs.h \
  /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/portable.h \
  /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/deprecated_definitions.h \
- /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/ARM_CM4F/portmacro.h \
+ /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/portable/ARM_CM4F/portmacro.h \
  /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/mpu_wrappers.h \
  /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/task.h \
  /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/list.h \
@@ -45,7 +45,7 @@ FreeRTOS/event_groups.o: ../FreeRTOS/event_groups.c \
 /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/projdefs.h:
 /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/portable.h:
 /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/deprecated_definitions.h:
-/Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/ARM_CM4F/portmacro.h:
+/Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/portable/ARM_CM4F/portmacro.h:
 /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/mpu_wrappers.h:
 /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/task.h:
 /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/list.h:

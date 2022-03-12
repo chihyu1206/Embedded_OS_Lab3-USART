@@ -1,4 +1,4 @@
-FreeRTOS/stream_buffer.o: ../FreeRTOS/stream_buffer.c \
+FreeRTOS/portable/MemMang/heap_4.o: ../FreeRTOS/portable/MemMang/heap_4.c \
  /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/FreeRTOS.h \
  /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/FreeRTOSConfig.h \
  /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/projdefs.h \
@@ -35,8 +35,7 @@ FreeRTOS/stream_buffer.o: ../FreeRTOS/stream_buffer.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/stream_buffer.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/FreeRTOS.h:
 /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/FreeRTOSConfig.h:
 /Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/projdefs.h:
@@ -74,4 +73,3 @@ FreeRTOS/stream_buffer.o: ../FreeRTOS/stream_buffer.c \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
-/Users/chihyu/STM32CubeIDE/workspace_1.9.0/Embedded_OS_Lab3_P76091713/FreeRTOS/include/stream_buffer.h:
