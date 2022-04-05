@@ -5261,7 +5261,7 @@ void LongConvertCharArray(UBaseType_t TxScanTaskPriority, char *charTxScanTaskSt
 }
 
 void Taskmonitor() {
-	char *TITLE = "Name\t|Priority(Base/actual)\t|pxStack\t|pxTopOfStack\t|State\n";
+	char TITLE[] = "Name\t|Priority(Base/actual)\t|pxStack\t|pxTopOfStack\t|State\n";
 	HAL_UART_Transmit(&huart2, (uint8_t *)TITLE, sizeof(TITLE), 0xffff);
 	char curr_buf[64], item_buf[16];
 	volatile int currNumofItem;
@@ -5272,10 +5272,9 @@ void Taskmonitor() {
     /*
      * READY State
      */
-	for (UBaseType_t priority = 0; priority < 15; ++priority) {
+	for (UBaseType_t priority = 0; priority < configMAX_PRIORITIES; ++priority) {
 		if (listLIST_IS_EMPTY(&pxReadyTasksLists[priority]))
 			continue;
-
 		currNumofItem = listCURRENT_LIST_LENGTH(&pxReadyTasksLists[priority]);
 		pxItem = listGET_ITEM_OF_HEAD_ENTRY(&pxReadyTasksLists[priority]);
 		for (; currNumofItem > 0; --currNumofItem, pxItem = pxItem->pxNext) {
@@ -5307,7 +5306,7 @@ void Taskmonitor() {
 			strncat(curr_buf, item_buf, strlen(item_buf));
 			strcat(curr_buf, "\t");
             // State
-			strcat(curr_buf, "READY\n\r");
+			strcat(curr_buf, "READY\r\n");
 			// Write to console from USART
 			HAL_UART_Transmit(&huart2, (uint8_t *)curr_buf, strlen(curr_buf), 0xffff);
 		}
@@ -5347,7 +5346,7 @@ void Taskmonitor() {
 		strncat(curr_buf, item_buf, strlen(item_buf));
 		strcat(curr_buf, "\t");
         // State
-		strcat(curr_buf, "DELAYED\n\r");
+		strcat(curr_buf, "DELAYED\r\n");
 		// Write to console from USART
 		HAL_UART_Transmit(&huart2, (uint8_t *)curr_buf, strlen(curr_buf), 0xffff);
 	}
